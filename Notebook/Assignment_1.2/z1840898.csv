@@ -1,0 +1,14 @@
+Industry,#Jobs,1
+Industry,Economical_Growth,1
+#Jobs,#Citizens,1
+#Citizens,Urbanization,1
+#Citizens,Tax_Revenue,1
+#Citizens,House_Market,1
+Urbanization,Green_Spaces_Destruction,1
+Tax_Revenue,Economical_Growth,1
+Tax_Revenue,School_Cut,-1
+School_Cut,Citizens_Satisfaction,-1
+Citizens_Satisfaction,Cost_of_Life,-1
+Citizens_Satisfaction,Green_Spaces_Destruction,-1
+House_Market,House_Prices,1
+House_Prices,Cost_of_Life,1

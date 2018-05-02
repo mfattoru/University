@@ -1,0 +1,4 @@
+/home/mfattoru/MEGA/1 - NIU UNIVERSITY/CSCI 631/assign4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mfattoru/MEGA/1 - NIU UNIVERSITY/CSCI 631/assign4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mfattoru/MEGA/1 - NIU UNIVERSITY/CSCI 631/assign4/cmake-build-debug/CMakeFiles/assign4srv.dir
+/home/mfattoru/MEGA/1 - NIU UNIVERSITY/CSCI 631/assign4/cmake-build-debug/CMakeFiles/assign4cli.dir
