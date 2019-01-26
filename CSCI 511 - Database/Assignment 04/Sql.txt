@@ -1,0 +1,138 @@
+------------- 1 ------------
+
+SELECT  pnum
+FROM sp
+
+------------ 2 --------------
+
+SELECT *
+FROM  s
+
+------------- 3 -------------
+
+SELECT snum
+FROM s
+WHERE city = 'Paris' AND status > 20
+
+------------- 4 --------------
+
+SELECT snum, status
+FROM s
+WHERE city = 'Paris'
+ORDER BY status DESC
+
+------------- 5 --------------
+
+SELECT sp.pnum, s.city
+FROM s,sp
+WHERE s.snum = sp.snum
+
+------------- 6 --------------
+
+SELECT s1.snum, s2.snum
+FROM s AS s1,s AS s2
+WHERE s1.snum < s2.snum AND s1.city = s2.city
+
+-------------- 7 --------------
+
+SELECT sname
+FROM s,sp
+WHERE s.snum = sp.snum AND sp.pnum = 'P2'
+
+--------------8 ----------------  WITH AGGREGATOR
+
+SELECT snum
+FROM s
+WHERE status < (
+    SELECT MAX(status) FROM s
+)
+
+----------- 8 ----------------- WITHOUT
+
+SELECT DISTINCT s1.snum
+FROM s AS s1, s AS s2
+WHERE s1.status < s2.status;
+
+------------ 9 ----------------
+
+SELECT DISTINCT sname
+FROM s,sp,p
+WHERE sp.pnum = p.pnum AND s.snum = sp.snum AND p.color = 'Red'
+
+------------ 10 --------------------  WITHOUT
+
+SELECT DISTINCT snum
+FROM sp AS sp1, sp AS sp2
+WHERE sp1.snum = 'S2' AND sp2.snum ~= 'S2' AND sp1.pnum = sp2.pnum
+
+------------- 11 -------------------
+
+SELECT DISTINCT sp1.pnum
+FROM sp AS sp1, sp AS sp2
+WHERE sp1.pnum = sp2.pnum AND sp1.snum != sp2.snum
+
+------------- 11 ------------------ WITH AGGREGATOR
+
+SELECT pnum
+FROM sp
+GROUP BY pnum
+HAVING COUNT(snum) > 1;
+
+-------------- 12 ------------------
+
+SELECT DISTINCT s1.sname
+FROM s AS s1
+WHERE  s1.snum NOT IN (
+    SELECT sp2.snum
+    FROM sp AS sp2
+    WHERE sp2.pnum = 'P2'
+)
+
+-------------- 13 -----------------
+
+SELECT DISTINCT snum
+FROM s
+WHERE s.snum != 'S1' AND s.city IN (
+    SELECT s1.city
+    FROM s AS s1
+    WHERE s1.snum = 'S1'
+)
+
+-------------- 14 -----------------
+
+SELECT DISTINCT s1.sname
+FROM s AS s1
+WHERE s1.snum = (
+    SELECT s2.snum
+    FROM s AS s2,sp
+    WHERE s2.snum = s1.snum AND s2.snum = sp.snum
+    GROUP BY s2.snum
+    HAVING COUNT(sp.pnum) = (
+        SELECT COUNT(*)
+        FROM p
+    )
+)
+
+-------------- 15 --------------
+--need to have at least equal or more part than s2
+-- and s2 parts need all to be in
+SELECT s2.snum
+FROM s AS s2,sp
+WHERE s2.snum = sp.snum and
+GROUP BY s2.snum
+HAVING COUNT(sp.pnum) >= (
+    SELECT COUNT(*)
+    FROM sp
+    WHERE sp.snum = 'S2'
+)
+
+
+-------------- 16 --------------
+
+SELECT p.pnum
+FROM p
+WHERE p.weight > 18 OR p.pnum IN (
+    SELECT sp.pnum
+    FROM sp
+    WHERE sp.snum = 'S2'
+);

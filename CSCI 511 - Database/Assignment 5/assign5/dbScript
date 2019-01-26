@@ -1,0 +1,37 @@
+CREATE SCHEMA z1840898;
+
+CREATE TABLE z1840898.State(
+    Id INT Primary Key,
+    Name varchar(60) NOT NULL,
+    minLat INT,
+    minLong INT,
+    maxLat INT,
+    maxLong INT
+);
+
+CREATE TABLE z1840898.County(
+    Id INT Primary Key,
+    Name varchar(60) NOT NULL,
+    minLat INT,
+    minLong INT,
+    maxLat INT,
+    maxLong INT
+);
+
+CREATE TABLE z1840898.SubCounty(
+    Id INT Primary Key,
+    Name varchar(60) NOT NULL,
+    minLat INT,
+    minLong INT,
+    maxLat INT,
+    maxLong INT
+);
+
+CREATE TABLE z1840898.Place(
+    Id INT Primary Key,
+    Name varchar(60) NOT NULL,
+    minLat INT,
+    minLong INT,
+    maxLat INT,
+    maxLong INT
+);
