@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/assign4srv.dir/prog4srv.c.o CMakeFiles/assign4srv.dir/wrap4srv.c.o CMakeFiles/assign4srv.dir/in-out.c.o  -o assign4srv 
