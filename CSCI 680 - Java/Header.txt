@@ -1,0 +1,11 @@
+/************************************************************
+ *                                                          *
+ *  CSCI 470/680          Assignment 1         Summer 2018  *
+ *                                                          *
+ *  Programmer: Michele Fattoruso - Z1840898                *
+ *                                                          *
+ *  Date Due:   Thursday, June 21, 2018 11:59 PM            *
+ *                                                          *
+ *  Purpose:    A simple hello world application            *
+ *                                                          *
+ ***********************************************************/

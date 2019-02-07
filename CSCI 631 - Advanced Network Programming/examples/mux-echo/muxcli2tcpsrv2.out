@@ -1,0 +1,50 @@
+Script started on 2018-03-18 11:21:49-0500
+101 > make C=2 S=2 T=2
+/usr/bin/make -f makefile2 C=2 S=2
+make[1]: Entering directory '/home/cs631/examples/mux-echo'
+gcc -c -g -Wall -Wextra muxcli2.c
+gcc -c -g -Wall -Wextra /home/cs631/examples/tcp-echo/tcpsrv2.c
+gcc -c -g -Wall -Wextra muxutil.c
+gcc -c -g -Wall -Wextra /home/cs631/examples/tcp-echo/tcputil.c
+gcc -o muxcli2.exe muxcli2.o muxutil.o /home/cs631/common/wrapper.o /home/cs631/common/in-out.o
+gcc -o tcpsrv2.exe tcpsrv2.o tcputil.o /home/cs631/common/wrapper.o /home/cs631/common/in-out.o
+make[1]: Leaving directory '/home/cs631/examples/mux-echo'
+102 > 
+102 > make execute C=2 S=2 T=2
+/usr/bin/make -f makefile2 execute C=2 S=2
+make[1]: Entering directory '/home/cs631/examples/mux-echo'
+/home/cs631/examples/test-prog/gen_data /home/cs631/examples/test-prog/testprog.c data-in 10000
+tcpsrv2.exe &
+time -p muxcli2.exe 127.0.0.1 < data-in > data-out; echo ""
+child 22152 terminated
+real 1.15
+user 0.19
+sys 0.96
+
+ls -l data-in data-out; echo ""; /bin/ps -f
+-rw------- 1 cs631 courses 7130000 Mar 18 11:22 data-in
+-rw------- 1 cs631 courses 7130000 Mar 18 11:22 data-out
+
+UID        PID  PPID  C STIME TTY          TIME CMD
+cs631    12114 12113  0 11:21 pts/1    00:00:00 -sh -i
+cs631    12138 12114  0 11:22 pts/1    00:00:00 make execute C=2 S=2 T=2
+cs631    12139 12138  0 11:22 pts/1    00:00:00 /usr/bin/make -f makefile2 execute C=2 S=2
+cs631    22148     1  0 11:22 pts/1    00:00:00 tcpsrv2.exe
+cs631    22153 12139  0 11:22 pts/1    00:00:00 /bin/sh -c ls -l data-in data-out; echo ""; /bin/ps -f
+cs631    22155 22153  0 11:22 pts/1    00:00:00 /bin/ps -f
+make[1]: Leaving directory '/home/cs631/examples/mux-echo'
+103 > 
+103 > make clean
+/bin/rm -f *.o *.exe data-in data-out
+if pgrep -x ".*.exe"; then\
+	killall -r ".*.exe"; /bin/ps -f;\
+fi
+22148
+UID        PID  PPID  C STIME TTY          TIME CMD
+cs631    12114 12113  0 11:21 pts/1    00:00:00 -sh -i
+cs631    22156 12114  0 11:22 pts/1    00:00:00 make clean
+cs631    22159 22156  0 11:22 pts/1    00:00:00 /bin/sh -c if pgrep -x ".*.exe"; then\ ?killall -r ".*.exe"; /
+cs631    22162 22159  0 11:22 pts/1    00:00:00 /bin/ps -f
+104 > exit
+
+Script done on 2018-03-18 11:22:56-0500

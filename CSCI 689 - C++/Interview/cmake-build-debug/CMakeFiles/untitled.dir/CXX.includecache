@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mfattoru/MEGA/1 - NIU UNIVERSITY/CSCI 689/untitled/main.cpp
+iostream
+-
+string
+-
+algorithm
+-
+array
+-
+vector
+-
+string
+-
+map
+-
+fstream
+-
+list
+-
+queue
+-
+set
+-
+stack
+-
+

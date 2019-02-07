@@ -1,0 +1,134 @@
+*** Test 1 ***
+s1 has length 0
+
+*** Test 2 ***
+s2 has length 4
+
+*** Test 3 ***
+Hot Warm Cold
+
+*** Test 4 ***
+This string is really long. It is supposed to be long.  So long, in fact, that it will be longer than will fit into a normal string variable.
+Length: 141
+
+*** Test 5 ***
+s1 is empty  s2 is not empty  
+
+*** Test 92 ***
+
+Comparing "pippo" and "pippo"
+   <    No
+   <=   Yes
+   >    No
+   >=   Yes
+   ==   Yes
+   !=   No
+
+*** Test 6 ***
+
+Comparing "calypso" and "keep"
+   <    Yes
+   <=   Yes
+   >    No
+   >=   No
+   ==   No
+   !=   Yes
+
+*** Test 7 ***
+
+Comparing "keep" and "calypso"
+   <    No
+   <=   No
+   >    Yes
+   >=   Yes
+   ==   No
+   !=   Yes
+
+*** Test 8 ***
+
+Comparing "keep" and "spring"
+   <    Yes
+   <=   Yes
+   >    No
+   >=   No
+   ==   No
+   !=   Yes
+
+*** Test 9 ***
+
+Comparing "spring" and "keep"
+   <    No
+   <=   No
+   >    Yes
+   >=   Yes
+   ==   No
+   !=   Yes
+
+*** Test 10 ***
+
+Comparing "keep" and "keepsake"
+   <    Yes
+   <=   Yes
+   >    No
+   >=   No
+   ==   No
+   !=   Yes
+
+*** Test 11 ***
+
+Comparing "keepsake" and "keep"
+   <    No
+   <=   No
+   >    Yes
+   >=   Yes
+   ==   No
+   !=   Yes
+
+*** Test 12 ***
+
+Comparing "keepsake" and "keepsake"
+   <    No
+   <=   Yes
+   >    No
+   >=   Yes
+   ==   Yes
+   !=   No
+
+*** Test 13 ***
+
+Comparing "melancholy" and "Momentary"
+   <    No
+   <=   No
+   >    Yes
+   >=   Yes
+   ==   No
+   !=   Yes
+
+*** Test 14 ***
+
+Character 2 in most is s
+*** Test 15 ***
+
+most is changed to moat
+*** Test 16 ***
+
+Take a look.
+*** Test 17 ***
+
+coat cost
+*** Test 18 ***
+
+No problem
+*** Test 19 ***
+
+Right.
+*** Test 20 ***
+
+Think!
+*** Test 21 ***
+
+Delta Gamma DeltaGamma
+*** Test 22 ***
+
+Bibbidy Bobbidy Boo!
+Bibbidy Bobbidy Too!

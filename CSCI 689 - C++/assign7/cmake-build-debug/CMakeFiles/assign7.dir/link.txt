@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/assign7.dir/assign7.cc.o  -o assign7 

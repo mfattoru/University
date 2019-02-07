@@ -1,0 +1,56 @@
+Test1: Basic Constructor and size
+t1 size: 0
+
+Test2: Simple insert and sizes
+t1: 4 total nodes
+
+Test3: printing tree
+Preorder:  wii iPod ps3 xbox
+Inorder:   iPod ps3 wii xbox
+Postorder: ps3 iPod xbox wii
+
+Test4: height
+t1 height: 3
+
+Test5: Clear
+t1 size: 0
+
+Test6: Large tree statistics
+Random number seed? 20180415
+Average height: 24.808
+Average size: 2000
+
+Test7: Copy constructor
+t2: 23 42 61 80 99 118 137 156 175 194
+t3: 23 42 61 80 99 118 137 156 175 194
+New t2 values
+t2: 65 84 103
+t3: 23 42 61 80 99 118 137 156 175 194
+
+Test8: Assignment operator
+t4: 46 65 84 103 122 141 160 179 198 217 236
+t5: 22 41 60 79 98 117 136 155 174 193 212
+Change values
+t4: 22 41 60 79 98 117 136 155 174 193 212
+t5: 22 35 41 60 79 98 117 136 155 174 193 212
+Assignment to self
+t5: 22 35 41 60 79 98 117 136 155 174 193 212
+Chained assignment
+t5: 146 165 184 203 222 241 260 279 298 317 336
+t6: 146 165 184 203 222 241 260 279 298 317 336
+t7: 146 165 184 203 222 241 260 279 298 317 336
+Sizes:
+t5: 11
+t6: 11
+t7: 11
+
+Test9: Empty tests
+t5 size: 0
+t5 height: 0
+t5 Preorder:
+t5 Inorder:
+t5 Postorder:
+
+Test10: Search test
+-42 is not in t6
+

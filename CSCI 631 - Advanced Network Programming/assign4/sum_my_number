@@ -1,0 +1,44 @@
+//sum my number able to receive as input both sequence of numbers, ore one number at a time.
+
+void sum_my_numbers(Client * cli, char* line) {
+    //variable to temporarily save the converted string to double
+    double tmp_var;
+    //pointer to the end of the string, useful to correctly break the while loop
+    //when we have analyzed the whole string
+    char* endptr=line + strlen(line) -1;
+    //reset the error number
+    errno=0;
+
+    //infinite loop until analized the whole sequence of numbers
+    while(true) {
+        //fprintf(stderr, "string: %f\n", *line);
+        //skip all the characters that are not digits
+        if (!isdigit(*line)) line++;
+
+        //if flag is true, then we need to perform computation of this number
+        if (cli->flag) {
+            //convert the string to a double
+            tmp_var = strtod(line, &line);
+            //perform the exponential operation and add to the sum
+            cli->sum += pow(tmp_var, cli->exp);
+            fprintf(stderr, "received value: %f - sum= %f\n", tmp_var, cli->sum);
+
+        }
+        //if flag is false, then this is an exponent. we save the value as exponent
+        else {//read exponent
+            //convert the string to a double
+            tmp_var = strtod(line, &line);
+            //Set the sum as starting value zero
+            cli->sum = 0;
+            //set the exponent value
+            cli->exp = tmp_var;
+            //mark the structure as aleady set the exponent
+            cli->flag = true;
+            fprintf(stderr, "received exponent: %f\n", tmp_var);
+        }
+        //if we reached the end of the string, or the conversion returned an error
+        //due to a value too big or too little to convert stop analyzing the sequence
+        if (line == endptr || errno) break;  // no conversion
+    }
+
+}

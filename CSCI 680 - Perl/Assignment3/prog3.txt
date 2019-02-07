@@ -1,0 +1,347 @@
+*** size = 1 ***
+
+Trial number: 1
+      Random starting point: (1,1)
+      Total number of squares touched: 1
+
+Total number of trials: 1
+Minimum number of squares touched: 1
+Maximum number of squares touched: 1
+Average number of squares touched: 1.00
+
+
+*** size = 2 ***
+
+Trial number: 2
+      Random starting point: (1,2)
+      Total number of squares touched: 1
+
+Trial number: 4
+      Random starting point: (1,2)
+      Total number of squares touched: 1
+
+Trial number: 6
+      Random starting point: (1,1)
+      Total number of squares touched: 1
+
+Trial number: 8
+      Random starting point: (2,2)
+      Total number of squares touched: 1
+
+Trial number: 10
+      Random starting point: (1,2)
+      Total number of squares touched: 1
+
+Trial number: 12
+      Random starting point: (2,1)
+      Total number of squares touched: 1
+
+Trial number: 14
+      Random starting point: (1,1)
+      Total number of squares touched: 1
+
+Trial number: 16
+      Random starting point: (1,1)
+      Total number of squares touched: 1
+
+Trial number: 18
+      Random starting point: (1,1)
+      Total number of squares touched: 1
+
+Trial number: 20
+      Random starting point: (1,1)
+      Total number of squares touched: 1
+
+Total number of trials: 20
+Minimum number of squares touched: 1
+Maximum number of squares touched: 1
+Average number of squares touched: 1.00
+
+
+*** size = 3 ***
+
+Trial number: 13
+      Random starting point: (1,3)
+      Total number of squares touched: 8
+
+Trial number: 26
+      Random starting point: (2,1)
+      Total number of squares touched: 8
+
+Trial number: 39
+      Random starting point: (1,1)
+      Total number of squares touched: 8
+
+Trial number: 52
+      Random starting point: (1,2)
+      Total number of squares touched: 8
+
+Trial number: 65
+      Random starting point: (1,1)
+      Total number of squares touched: 8
+
+Trial number: 78
+      Random starting point: (1,1)
+      Total number of squares touched: 8
+
+Trial number: 91
+      Random starting point: (2,3)
+      Total number of squares touched: 8
+
+Total number of trials: 100
+Minimum number of squares touched: 1
+Maximum number of squares touched: 8
+Average number of squares touched: 7.51
+
+
+*** size = 4 ***
+
+Trial number: 25
+      Random starting point: (4,4)
+      Total number of squares touched: 10
+
+Trial number: 50
+      Random starting point: (2,3)
+      Total number of squares touched: 4
+
+Trial number: 75
+      Random starting point: (2,3)
+      Total number of squares touched: 14
+
+Trial number: 100
+      Random starting point: (4,3)
+      Total number of squares touched: 9
+
+Trial number: 125
+      Random starting point: (1,3)
+      Total number of squares touched: 11
+
+Trial number: 150
+      Random starting point: (1,2)
+      Total number of squares touched: 7
+
+Trial number: 175
+      Random starting point: (4,4)
+      Total number of squares touched: 13
+
+Trial number: 200
+      Random starting point: (4,2)
+      Total number of squares touched: 14
+
+Total number of trials: 200
+Minimum number of squares touched: 4
+Maximum number of squares touched: 15
+Average number of squares touched: 9.89
+
+
+*** size = 5 ***
+
+Trial number: 50
+      Random starting point: (5,4)
+      Total number of squares touched: 16
+
+Trial number: 100
+      Random starting point: (1,2)
+      Total number of squares touched: 14
+
+Trial number: 150
+      Random starting point: (3,4)
+      Total number of squares touched: 17
+
+Trial number: 200
+      Random starting point: (4,3)
+      Total number of squares touched: 19
+
+Trial number: 250
+      Random starting point: (4,3)
+      Total number of squares touched: 17
+
+Trial number: 300
+      Random starting point: (5,4)
+      Total number of squares touched: 14
+
+Trial number: 350
+      Random starting point: (2,1)
+      Total number of squares touched: 15
+
+Trial number: 400
+      Random starting point: (2,4)
+      Total number of squares touched: 17
+
+Trial number: 450
+      Random starting point: (4,1)
+      Total number of squares touched: 20
+
+Trial number: 500
+      Random starting point: (2,2)
+      Total number of squares touched: 13
+
+Total number of trials: 500
+Minimum number of squares touched: 4
+Maximum number of squares touched: 24
+Average number of squares touched: 14.50
+
+
+*** size = 6 ***
+
+Trial number: 100
+      Random starting point: (6,1)
+      Total number of squares touched: 20
+
+Trial number: 200
+      Random starting point: (2,5)
+      Total number of squares touched: 22
+
+Trial number: 300
+      Random starting point: (6,1)
+      Total number of squares touched: 22
+
+Trial number: 400
+      Random starting point: (5,2)
+      Total number of squares touched: 16
+
+Trial number: 500
+      Random starting point: (2,4)
+      Total number of squares touched: 17
+
+Trial number: 600
+      Random starting point: (4,2)
+      Total number of squares touched: 22
+
+Trial number: 700
+      Random starting point: (3,5)
+      Total number of squares touched: 24
+
+Trial number: 800
+      Random starting point: (1,1)
+      Total number of squares touched: 26
+
+Trial number: 900
+      Random starting point: (1,1)
+      Total number of squares touched: 12
+
+Trial number: 1000
+      Random starting point: (1,4)
+      Total number of squares touched: 14
+
+Total number of trials: 1000
+Minimum number of squares touched: 5
+Maximum number of squares touched: 34
+Average number of squares touched: 20.14
+
+
+*** size = 7 ***
+
+Trial number: 83
+      Random starting point: (2,4)
+      Total number of squares touched: 33
+
+Trial number: 166
+      Random starting point: (5,3)
+      Total number of squares touched: 26
+
+Trial number: 249
+      Random starting point: (7,5)
+      Total number of squares touched: 35
+
+Trial number: 332
+      Random starting point: (1,7)
+      Total number of squares touched: 25
+
+Trial number: 415
+      Random starting point: (3,4)
+      Total number of squares touched: 20
+
+Trial number: 498
+      Random starting point: (1,6)
+      Total number of squares touched: 31
+
+Trial number: 581
+      Random starting point: (7,6)
+      Total number of squares touched: 26
+
+Trial number: 664
+      Random starting point: (4,4)
+      Total number of squares touched: 19
+
+Trial number: 747
+      Random starting point: (7,4)
+      Total number of squares touched: 31
+
+Trial number: 830
+      Random starting point: (4,6)
+      Total number of squares touched: 29
+
+Trial number: 913
+      Random starting point: (6,6)
+      Total number of squares touched: 18
+
+Trial number: 996
+      Random starting point: (7,5)
+      Total number of squares touched: 31
+
+Total number of trials: 1000
+Minimum number of squares touched: 4
+Maximum number of squares touched: 44
+Average number of squares touched: 27.02
+
+
+*** size = 8 ***
+
+Trial number: 83
+      Random starting point: (4,1)
+      Total number of squares touched: 39
+
+Trial number: 166
+      Random starting point: (8,3)
+      Total number of squares touched: 32
+
+Trial number: 249
+      Random starting point: (3,4)
+      Total number of squares touched: 39
+
+Trial number: 332
+      Random starting point: (8,6)
+      Total number of squares touched: 21
+
+Trial number: 415
+      Random starting point: (3,5)
+      Total number of squares touched: 43
+
+Trial number: 498
+      Random starting point: (1,7)
+      Total number of squares touched: 49
+
+Trial number: 581
+      Random starting point: (7,6)
+      Total number of squares touched: 26
+
+Trial number: 664
+      Random starting point: (8,6)
+      Total number of squares touched: 25
+
+Trial number: 747
+      Random starting point: (2,7)
+      Total number of squares touched: 34
+
+Trial number: 830
+      Random starting point: (3,5)
+      Total number of squares touched: 44
+
+Trial number: 913
+      Random starting point: (8,1)
+      Total number of squares touched: 32
+
+Trial number: 996
+      Random starting point: (4,6)
+      Total number of squares touched: 39
+
+Total number of trials: 1000
+Minimum number of squares touched: 6
+Maximum number of squares touched: 56
+Average number of squares touched: 34.23
+
+
+real 0.68
+user 0.65
+sys 0.02

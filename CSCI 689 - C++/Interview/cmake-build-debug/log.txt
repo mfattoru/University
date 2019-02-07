@@ -1,0 +1,9 @@
+prog1 0
+prog1 1
+prog2 0
+prog3 0
+prog4 0
+prog2 1
+prog4 1
+prog2 0
+prog2 1
